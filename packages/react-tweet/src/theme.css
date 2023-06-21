@@ -1,5 +1,5 @@
 .react-tweet-theme {
-  --tweet-container-margin: 1.5rem 0;
+  --tweet-container-margin: 0;
 
   /* Header */
   --tweet-header-font-size: 0.9375rem;
