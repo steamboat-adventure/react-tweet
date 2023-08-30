@@ -1,5 +1,55 @@
 # react-tweet
 
+## 3.1.1
+
+### Patch Changes
+
+- dc5cadf: Added missing token to API requests to Twitter's CDN
+
+## 3.1.0
+
+### Minor Changes
+
+- 27d98ab: Added quoted tweet support and updated logo
+
+## 3.0.4
+
+### Patch Changes
+
+- 96e539a: - Fix position twitter icon for dir=rtl (#102)
+  - Fix: bump author padding (#106)
+  - Fix regression in media layout with multiple images (#103)
+
+## 3.0.3
+
+### Patch Changes
+
+- 42d317f: Updated Twitter theme
+
+## 3.0.2
+
+### Patch Changes
+
+- af50d09: Better CSS defaults to avoid external CSS conflicts
+
+## 3.0.1
+
+### Patch Changes
+
+- cc13ec8: Allow fetch options to be customized
+
+## 3.0.0
+
+### Major Changes
+
+- 7a92646: Theme support
+
+## 2.0.2
+
+### Patch Changes
+
+- 938522d: Check for default export in swr import
+
 ## 2.0.1
 
 ### Patch Changes
