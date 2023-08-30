@@ -30,8 +30,6 @@ export const EmbeddedTweet = ({ tweet: t, components }: Props) => {
       ) : null}
       {tweet.quoted_tweet && <QuotedTweet tweet={tweet.quoted_tweet} />}
       <TweetInfo tweet={tweet} />
-      <TweetActions tweet={tweet} />
-      <TweetReplies tweet={tweet} />
     </TweetContainer>
   )
 }
