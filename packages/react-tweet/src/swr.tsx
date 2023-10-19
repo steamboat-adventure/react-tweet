@@ -1,6 +1,7 @@
 'use client'
 
 import { type ReactNode } from 'react'
+import type { Tweet as TweetType } from './api/index.js';
 import {
   EmbeddedTweet,
   TweetNotFound,
@@ -13,6 +14,7 @@ import { useTweet } from './hooks.js'
 export type TweetProps = Omit<TweetCoreProps, 'id'> & {
   fallback?: ReactNode
   components?: TwitterComponents
+  data?: TweetType,
   fetchOptions?: RequestInit
 } & (
     | {
@@ -40,6 +42,17 @@ export const Tweet = ({
     const NotFound = components?.TweetNotFound || TweetNotFound
     return <NotFound error={onError ? onError(error) : error} />
   }
+
+  return <EmbeddedTweet tweet={data} components={components} />
+}
+
+export const StaticTweet = ({
+  data,
+  fallback = <TweetSkeleton />,
+  components,
+  onError,
+}: TweetProps) => {
+  if (!data) return fallback
 
   return <EmbeddedTweet tweet={data} components={components} />
 }
